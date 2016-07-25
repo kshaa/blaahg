@@ -59,3 +59,11 @@ article > p {
     text-justify: inter-word;
 }
 
+/* Responsiveness media queries */
+@media (max-width: 1024px) {
+    article {
+        margin-left: 56px;
+        margin-right: 56px;
+    }
+}
+
