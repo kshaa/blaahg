@@ -1,0 +1,15 @@
+/**
+ * Font definitions
+ */
+
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+
+@font-face {
+    font-family: 'alegreya-thin';
+    src: url('../fonts/alegreya-sans.thin.ttf');
+}
+
+@font-face {
+    font-family: 'alegreya-light';
+    src: url('../fonts/alegreya-sans.light.ttf');
+}

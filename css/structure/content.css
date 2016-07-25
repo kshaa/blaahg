@@ -1,0 +1,61 @@
+/**
+ * Content section
+ */
+
+@import url(postbox.css);
+
+body {
+    background: #444;
+}
+
+article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em 3em;
+    margin-bottom: 80px;
+
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+
+    box-shadow: 1px 2px 6px rgba(0,0,0, 0.5);
+    -moz-box-shadow: 1px 2px 6px rgba(0,0,0, 0.5);
+    -webkit-box-shadow: 1px 2px 6px rgba(0,0,0, 0.5);
+}
+
+article {
+    background: #fff;
+    color: #3e4349;
+    line-height: 1.625em;
+}
+
+article header {
+    text-align: center;
+}
+
+article header h1 {
+    margin-bottom: 5px;
+}
+
+article header p {
+    margin-top: 5px;
+    color: #aaa;
+}
+
+article a {
+    color: #3e4349;
+    text-decoration: none;
+    transition: 0.15s;
+    border-bottom: 1px solid rgb(170,170,170);
+}
+
+article a:hover {
+    border-bottom: 1px solid rgb(100,100,100);
+}
+
+article > p {
+    text-indent: 50px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+

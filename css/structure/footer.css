@@ -1,0 +1,54 @@
+/**
+ * Footer section
+ */
+
+html {
+    height: calc(100% - 70px);
+    box-sizing: border-box;
+}
+
+body {
+    padding-bottom: 70px;
+    position: relative;
+    min-height: 100%;
+}
+
+#footer {
+    color: #fff;
+    background: #222;
+    font-size: 12px;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+
+#footer #columns {
+    max-width: 800px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+/* Placeholder in case multiple columns necessary in footer */
+#footer #columns div {
+    padding-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+    float: right;
+    width: 100%;
+}
+
+#footer a {
+    padding: 5px 40px;
+    text-decoration: none;
+    transition: 0.15s;
+    color: #aaa;
+
+}
+
+#footer a:hover {
+    color: #fff;
+}

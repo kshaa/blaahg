@@ -1,0 +1,43 @@
+/**
+ * Header section
+ */
+
+div#header {
+    background: #222;
+    margin-bottom: 80px;
+}
+
+div#navigation {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div#navigation a {
+    display: inline-block;
+    padding: 16px 12px;
+    text-decoration: none;
+}
+
+div#navigation span {
+    color: #aaa;
+    font-family: 'alegreya-light';
+    font-size: 22px;
+    text-transform: uppercase;
+    transition: 0.15s;
+}
+
+div#navigation a:hover span {
+    color: #eee;
+}
+
+/* Content specific */
+div#navigation a:nth-child(1) {
+    margin-left: 12px;
+}
+
+div#navigation span:nth-child(2) {
+    font-size: 12px;
+    text-transform: none;
+    font-family: "Liberation Sans";
+}
