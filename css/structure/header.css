@@ -3,6 +3,7 @@
  */
 
 div#header {
+    opacity: 0.85;
     background: #222;
     margin-bottom: 80px;
 }
