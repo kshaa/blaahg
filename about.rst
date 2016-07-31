@@ -1,17 +1,13 @@
 ---
-title: About
+title: Info
 ---
-Nullam imperdiet sodales orci vitae molestie. Nunc quam orci, pharetra a
-rhoncus vitae, eleifend id felis. Suspendisse potenti. Etiam vitae urna orci.
-Quisque pellentesque dignissim felis, egestas tempus urna luctus vitae. In hac
-habitasse platea dictumst. Morbi fringilla mattis odio, et mattis tellus
-accumsan vitae.
 
-1. Amamus Unicode 碁
-2. Interdum nex magna.
+I'm a student at Riga State Gymnasium No. 3, there I broadly study physics,
+programming and mathematics. In my free time I try to educate myself
+further by attending events such as `Make Rīga`_ programming sessions and
+`Junior Physics Academy`_.
 
-Vivamus eget mauris sit amet nulla laoreet lobortis. Nulla in diam elementum
-risus convallis commodo. Cras vehicula varius dui vitae facilisis. Proin
-elementum libero eget leo aliquet quis euismod orci vestibulum. Duis rhoncus
-lorem consequat tellus vestibulum aliquam. Quisque orci orci, malesuada porta
-blandit et, interdum nec magna.
+When not educating myself, I play the accordion and make works of art.
+
+.. _Make Rīga: http://makeriga.org/
+.. _Junior Physics Academy: http://jfs.lu.lv/
