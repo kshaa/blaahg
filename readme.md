@@ -1,6 +1,9 @@
 ---
-Custom Hakyll blog
+Krišjānis Veinbahs' blog
 ---
 
-Dependancies:
-* Hakyll 4.8.3.2
+Official Krišjānis' blog for posts and projects.
+As minimalistic as a blog can be.
+
+Based on [Hakyll](https://jaspervdj.be/hakyll/).
+
