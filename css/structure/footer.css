@@ -42,11 +42,11 @@ body {
 }
 
 #footer a {
-    padding: 5px 40px;
+    padding: 5px 4%;
     text-decoration: none;
     transition: 0.15s;
     color: #aaa;
-
+    overflow: hidden;
 }
 
 #footer a:hover {
