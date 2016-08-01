@@ -17,6 +17,7 @@
 
 article {
     max-width: 650px;
+    background: #fff;
     margin: 0 auto;
     padding: 1em 3em;
     margin-bottom: 80px;
@@ -30,8 +31,13 @@ article {
     -webkit-box-shadow: 1px 2px 6px rgba(0,0,0, 0.5);
 }
 
-article {
-    background: #fff;
+article p,
+article span,
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,{
     color: #3e4349;
     line-height: 1.625em;
     word-wrap: break-word;
