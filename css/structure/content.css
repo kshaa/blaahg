@@ -40,8 +40,11 @@ article h4,
 article h5,{
     color: #3e4349;
     line-height: 1.625em;
-    word-wrap: break-word;
     font-size: 16px;
+}
+
+article {
+    word-wrap: break-word;
 }
 
 article header {
