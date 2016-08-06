@@ -3,6 +3,11 @@ title: Info
 author: Krišjānis Veinbahs
 ---
 
+<header>
+<h1><a href="#">Krišjānis Veinbahs</a></h1>
+<p>A coder with a crush on physics</p>
+</header>
+
 ![](images/face.jpg)
 
 I'm a latvian student at [Riga State Gymnasium No.3](http://www.r3g.lv/),
@@ -17,7 +22,3 @@ When not educating myself, I play the accordion and creatively express
 myself on [Instagram](http://instagram.com/dope_spicegirls/). I also
 ride the [bicycle](http://facebook.com/nightrideriga/) and play
 volleyball.
-
-<i class="fa fa-phone" aria-hidden="true">  +371 277 56 959</i>
-
-<i class="fa fa-envelope" aria-hidden="true">  krisjanis.veinbahs@gmail.com</i>

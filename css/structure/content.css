@@ -5,7 +5,7 @@
 @import url(postbox.css);
 
 :root {
-    --main-hover-color: rgb(217, 78, 103);
+    --main-hover-color: rgba(217, 78, 103, 1);
 }
 
 #background {
@@ -79,7 +79,7 @@ article a {
 }
 
 article a:hover,
-article .fa:hover {
+article .fa > a:hover{
     color: var(--main-hover-color);
     border-bottom: 1px solid var(--main-hover-color);
 }
@@ -91,8 +91,13 @@ article > p {
 }
 
 article .fa {
-    transition: 0.5s;
+    margin-left: -2em;
     text-indent: 0;
+}
+
+article .fa > a {
+    transition: 0.5s;
+    margin-left: 1em;
     border-bottom: 1px solid rgba(0,0,0,0);
 }
 
