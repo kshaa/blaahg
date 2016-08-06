@@ -4,6 +4,10 @@
 
 @import url(postbox.css);
 
+:root {
+    --main-hover-color: rgb(217, 78, 103);
+}
+
 #background {
     width: 100%;
     height: 100%;
@@ -62,20 +66,28 @@ article header p {
 }
 
 article a {
+    transition: 0.5s;
     color: #3e4349;
     text-decoration: none;
-    transition: 0.15s;
     border-bottom: 1px solid rgb(170,170,170);
 }
 
-article a:hover {
-    border-bottom: 1px solid rgb(100,100,100);
+article a:hover,
+article .fa:hover {
+    color: var(--main-hover-color);
+    border-bottom: 1px solid var(--main-hover-color);
 }
 
 article > p {
     text-indent: 50px;
     text-align: justify;
     text-justify: inter-word;
+}
+
+article .fa {
+    transition: 0.5s;
+    text-indent: 0;
+    border-bottom: 1px solid rgba(0,0,0,0);
 }
 
 article img {
