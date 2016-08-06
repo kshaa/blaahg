@@ -19,13 +19,13 @@ old version of the [Orbitals](https://github.com/kshaa/orbitals)
 project:
 
 ```
- 35  orbPointForce: function (settings, point, mass) {
- 36      var gravity = settings.gravity;
- 37      var m1 = this.mass, p1 = this.position;
- 38      var m2 = mass,      p2 = point;
- 39
- 40      var radius = p1.sub(p2).length();
- 41      var force = (m1 * m2 * gravity) / (radius * radius);
- 42      this.force = p1.clone().setLength(force).negate();
- 43  }
+orbPointForce: function (settings, point, mass) {
+    var gravity = settings.gravity;
+    var m1 = this.mass, p1 = this.position;
+    var m2 = mass,      p2 = point;
+
+    var radius = p1.sub(p2).length();
+    var force = (m1 * m2 * gravity) / (radius * radius);
+    this.force = p1.clone().setLength(force).negate();
+}
 ```

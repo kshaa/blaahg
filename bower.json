@@ -15,7 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "spiral": "git://github.com/kshaa/spiral.git#e77488f",
-    "orbitals": "git://github.com/kshaa/orbitals.git#0111947"
+    "spiral": "git://github.com/kshaa/spiral.git#14e8be1",
+    "orbitals": "git://github.com/kshaa/orbitals.git#3d702e6"
   }
 }
