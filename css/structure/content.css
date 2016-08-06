@@ -37,7 +37,8 @@ article h1,
 article h2,
 article h3,
 article h4,
-article h5,{
+article h5,
+article th {
     color: #3e4349;
     line-height: 1.625em;
     font-size: 16px;
@@ -75,6 +76,20 @@ article > p {
     text-indent: 50px;
     text-align: justify;
     text-justify: inter-word;
+}
+
+article img {
+    width: 85%;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    box-shadow: 4px 5px 6px rgba(0,0,0, 0.1);
+    -moz-box-shadow: 4px 5px 6px rgba(0,0,0, 0.1);
+    -webkit-box-shadow: 4px 5px 6px rgba(0,0,0, 0.1);
+}
+
+article div {
+    text-align: center;
 }
 
 /* Responsiveness media queries */
