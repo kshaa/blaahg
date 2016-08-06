@@ -1,0 +1,15 @@
+# Compiled code
+_cache*
+_site*
+
+# IDE Settings, caches
+*.swp
+.idea*
+
+# Stack files
+.stack-work*
+stack.yaml
+
+# Bower fetched projects
+p/**
+!p/**/index.markdown
