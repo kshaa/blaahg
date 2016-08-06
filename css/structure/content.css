@@ -4,10 +4,6 @@
 
 @import url(postbox.css);
 
-:root {
-    --main-hover-color: rgba(217, 78, 103, 1);
-}
-
 #background {
     width: 100%;
     height: 100%;
@@ -111,7 +107,7 @@ article img {
     -webkit-box-shadow: 4px 5px 6px rgba(0,0,0, 0.1);
 }
 
-article div {
+article div.figure {
     text-align: center;
 }
 
