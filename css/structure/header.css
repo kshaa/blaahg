@@ -14,17 +14,10 @@ div#navigation {
     text-align: center;
 }
 
-div#navigation div {
-    display: inline-table;
-}
-
 div#navigation a {
     display: inline-block;
-    padding: 16px 4px;
+    padding: 16px 10px;
     text-decoration: none;
-}
-
-div#navigation a.link {
     color: #aaa;
     font-family: 'alegreya-light';
     font-size: 22px;
@@ -32,13 +25,6 @@ div#navigation a.link {
     transition: 0.15s;
 }
 
-div#navigation a.link span:hover {
+div#navigation a:hover {
     color: #eee;
-}
-
-div#navigation a.text span {
-    color: #aaa;
-    font-size: 12px;
-    text-transform: none;
-    font-family: "Liberation Sans";
 }

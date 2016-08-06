@@ -7,15 +7,7 @@ Krišjānis Veinbahs' blog
 Official Krišjānis' blog for posts and projects.
 As minimalistic as a blog can be.
 
-Based on [Hakyll](https://jaspervdj.be/hakyll/).
+#### Dependancies
+* [Hakyll](https://jaspervdj.be/hakyll/) for building a static site
+* [Bower](https://bower.io/) for fetching showcase projects
 
-
-## Possible to-do
-
-#### Global
-* Structurize CSS properly
-* Install Hakyll tags
-
-#### Post hover container
-* Limit character count
-* Show description on hover

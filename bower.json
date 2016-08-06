@@ -1,0 +1,21 @@
+{
+  "name": "hakyll-bio",
+  "homepage": "https://github.com/kshaa/hakyll-bio",
+  "authors": [
+    "Krišjānis Veinbahs <krisjanis.veinbahs@gmail.com>"
+  ],
+  "description": "A blogpost and project showcase",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "spiral": "git://github.com/kshaa/spiral.git#e77488f",
+    "orbitals": "git://github.com/kshaa/orbitals.git#0111947"
+  }
+}

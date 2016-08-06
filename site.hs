@@ -7,6 +7,20 @@ import           Hakyll
 --------------------------------------------------------------------------------
 main :: IO ()
 main = hakyll $ do
+    match "p/spiral/**" $ do
+        route   idRoute
+        compile copyFileCompiler
+
+    match "p/orbitals/**" $ do
+        route   idRoute
+        compile copyFileCompiler
+
+    match "p/index.markdown" $ do
+        route   $ setExtension "html"
+        compile $ pandocCompiler
+            >>= loadAndApplyTemplate "templates/default.html" defaultContext
+            >>= relativizeUrls
+
     match "images/*" $ do
         route   idRoute
         compile copyFileCompiler
