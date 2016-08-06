@@ -11,12 +11,12 @@ div#header {
 div#navigation {
     max-width: 600px;
     margin: 0 auto;
-    text-align: center;
 }
 
 div#navigation a {
     display: inline-block;
     padding: 16px 12px;
+    width: calc(47% - (12px * 2));
     text-decoration: none;
 }
 
@@ -32,13 +32,20 @@ div#navigation a:hover span {
     color: #eee;
 }
 
-/* Content specific */
-div#navigation a:nth-child(1) {
-    margin-left: 12px;
-}
-
-div#navigation span:nth-child(2) {
+div#navigation > span {
     font-size: 12px;
     text-transform: none;
     font-family: "Liberation Sans";
+    width: 6%;
+}
+
+/* Align text */
+div#navigation a:nth-child(1) {
+    text-align: right;
+}
+div#navigation a:nth-child(2) {
+    text-align: left;
+}
+div#navigation span:nth-child(3) {
+    text-align: center;
 }
