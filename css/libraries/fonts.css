@@ -6,10 +6,10 @@
 
 @font-face {
     font-family: 'alegreya-thin';
-    src: url('../fonts/alegreya-sans.thin.ttf');
+    src: url('../../fonts/alegreya-sans.thin.ttf');
 }
 
 @font-face {
     font-family: 'alegreya-light';
-    src: url('../fonts/alegreya-sans.light.ttf');
+    src: url('../../fonts/alegreya-sans.light.ttf');
 }

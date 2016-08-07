@@ -6,6 +6,10 @@ div#header {
     opacity: 0.85;
     background: #222;
     margin-bottom: 80px;
+    transition: 0.5s;
+    width: 100%;
+    display: block;
+    z-index: 3;
 }
 
 div#navigation {
@@ -14,7 +18,8 @@ div#navigation {
     text-align: center;
 }
 
-div#navigation a {
+div#navigation a,
+div#hovermenu {
     display: inline-block;
     padding: 16px 10px;
     text-decoration: none;
@@ -23,6 +28,21 @@ div#navigation a {
     font-size: 22px;
     text-transform: uppercase;
     transition: 0.15s;
+}
+
+div#hovermenu {
+    position: fixed;
+    z-index: 4;
+    transition: 0.5s;
+    top: 0;
+    left: 20px;
+    padding: 7px 20px;
+    text-transform: none;
+    color: #ccc;
+    background: #222;
+    border-radius: 0 0 2px 2px;
+    -moz-border-radius: 0 0 2px 2px;
+    -webkit-border-radius: 0 0 2px 2px;
 }
 
 div#navigation a:hover {

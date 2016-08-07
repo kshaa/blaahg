@@ -11,5 +11,4 @@ _site*
 stack.yaml
 
 # Bower fetched projects
-p/**
-!p/**/index.markdown
+pkg/**

@@ -1,5 +1,5 @@
 /**
- * Content section
+ * Article section
  */
 
 @import url(postbox.css);
@@ -15,7 +15,7 @@
     background-attachment: fixed;
 }
 
-article {
+#content.article {
     max-width: 650px;
     background: #fff;
     margin: 0 auto;
@@ -31,72 +31,72 @@ article {
     -webkit-box-shadow: 1px 2px 6px rgba(0,0,0, 0.5);
 }
 
-article p,
-article h1,
-article h2,
-article h3,
-article h4,
-article h5,
-article th {
+#content.article p,
+#content.article h1,
+#content.article h2,
+#content.article h3,
+#content.article h4,
+#content.article h5,
+#content.article th {
     color: #3e4349;
     line-height: 1.625em;
     font-size: 16px;
 }
 
-article {
+#content.article {
     word-wrap: break-word;
 }
 
-article header {
+#content.article header {
     text-align: center;
 }
 
-article header h1 {
+#content.article header h1 {
     margin-bottom: 5px;
 }
 
-article header h1 a {
+#content.article header h1 a {
     transition: 0.5s;
     text-decoration: none;
     border-bottom: 1px solid rgba(0,0,0,0);
 }
 
-article header p {
+#content.article header p {
     margin-top: 5px;
     color: #aaa;
 }
 
-article a {
+#content.article a {
     transition: 0.5s;
     color: #3e4349;
     text-decoration: none;
     border-bottom: 1px solid rgb(170,170,170);
 }
 
-article a:hover,
-article .fa > a:hover{
+#content.article a:hover,
+#content.article .fa > a:hover{
     color: var(--main-hover-color);
     border-bottom: 1px solid var(--main-hover-color);
 }
 
-article > p {
+#content.article > p {
     text-indent: 50px;
     text-align: justify;
     text-justify: inter-word;
 }
 
-article .fa {
+#content.article .fa {
     margin-left: -2em;
     text-indent: 0;
 }
 
-article .fa > a {
+#content.article .fa > a {
     transition: 0.5s;
     margin-left: 1em;
     border-bottom: 1px solid rgba(0,0,0,0);
 }
 
-article img {
+#content.article img {
     width: 85%;
     -webkit-border-radius: 1px;
     -moz-border-radius: 1px;
@@ -106,13 +106,13 @@ article img {
     -webkit-box-shadow: 4px 5px 6px rgba(0,0,0, 0.1);
 }
 
-article div.figure {
+#content.article div.figure {
     text-align: center;
 }
 
 /* Responsiveness media queries */
 @media (max-width: 1024px) {
-    article {
+    #content.article {
         /* Absolute to relative margin */
         margin-left: 13.7%;
         margin-right: 13.7%;

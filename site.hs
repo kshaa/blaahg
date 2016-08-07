@@ -7,11 +7,7 @@ import           Hakyll
 --------------------------------------------------------------------------------
 main :: IO ()
 main = hakyll $ do
-    match "p/spiral/**" $ do
-        route   idRoute
-        compile copyFileCompiler
-
-    match "p/orbitals/**" $ do
+    match "pkg/**" $ do
         route   idRoute
         compile copyFileCompiler
 
@@ -19,6 +15,12 @@ main = hakyll $ do
         route   $ setExtension "html"
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
+            >>= relativizeUrls
+
+    match "p/**/index.markdown" $ do
+        route   $ setExtension "html"
+        compile $ pandocCompiler
+            >>= loadAndApplyTemplate "templates/showcase.html" defaultContext
             >>= relativizeUrls
 
     match "images/*" $ do
@@ -29,7 +31,7 @@ main = hakyll $ do
         route   idRoute
         compile copyFileCompiler
 
-    match "js/*" $ do
+    match "js/**" $ do
         route   idRoute
         compile copyFileCompiler
 

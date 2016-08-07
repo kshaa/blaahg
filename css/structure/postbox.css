@@ -17,13 +17,13 @@
     background: rgba(40,40,40,0.8)
 }
 
-a.postbox {
-    border-bottom: 5px solid rgba(0,0,0,0);
+.postbox {
+    border-bottom: 5px solid rgba(0,0,0,0) !important;
 }
-a.postbox:hover {
-    border-bottom: 5px solid var(--main-hover-color);
+.postbox:hover {
+    border-bottom: 5px solid var(--main-hover-color) !important;
 }
 
-a.postbox:hover span {
+.postbox:hover span {
     color: #fff;
 }

@@ -1,9 +1,0 @@
-/* Resources */
-@import url("normalize.css");
-@import url("colors.css");
-@import url("fonts.css");
-
-/* Structure */
-@import url("structure/header.css");
-@import url("structure/content.css");
-@import url("structure/footer.css");

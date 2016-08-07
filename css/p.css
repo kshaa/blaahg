@@ -1,0 +1,8 @@
+/* Resources */
+@import url("libraries/normalize.css");
+@import url("libraries/colors.css");
+@import url("libraries/fonts.css");
+
+/* Structure */
+@import url("structure/header.css");
+@import url("structure/project.css");
