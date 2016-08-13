@@ -110,6 +110,10 @@
     text-align: center;
 }
 
+#content.article pre code {
+    white-space: pre-wrap;
+}
+
 /* Responsiveness media queries */
 @media (max-width: 1024px) {
     #content.article {
