@@ -10,15 +10,6 @@ author: Krišjānis Veinbahs
 
 ![](images/face.jpg)
 
-I'm a latvian student at [Riga State Gymnasium No.3](http://www.r3g.lv/),
-where I broadly study physics, programming and mathematics. In my free
-time I try to educate myself further by making [blogs](../), configuring
-servers, programming physics [simulations](http://github.com/kshaa/orbitals/)
-and making simplistic games. I've also worked at [Scandiweb](http://scandiweb.com/)
-and am a frequent at [Junior Physics Academy](http://jfs.lu.lv/).
+I'm a latvian student studying at [Riga State Gymnasium No. 3](http://www.r3g.lv/), where I broadly study physics, programming and mathematics. I also make blogs, configure servers, and code physics [simulations and/or games](http://github.com/kshaa/orbitals/). I've also furthered my programming skills by working at [Scandiweb](http://scandiweb.com/) as a web developer for [LashAffair](http://lashaffair.com/) and have explored physics by being a frequent at [Junior Physics Academy](http://jfs.lu.lv/).
 
-
-When not educating myself, I play the accordion and creatively express
-myself on [Instagram](http://instagram.com/dope_spicegirls/). I also
-ride the [bicycle](http://facebook.com/nightrideriga/) and play
-volleyball.
+When not working, I creatively express myself on such social platforms as [Instagram](http://instagram.com/dope_spicegirls/) and [Twitter](https://twitter.com/blokflautijs), attend [weekly bike rides](http://facebook.com/nightrideriga/), play volleyball and more!

@@ -1,22 +1,13 @@
 ---
-title: Code formatting test
+title: Code formatting
 author: Krišjānis Veinbahs
 ---
 
-The blog seems to be coming together quite nicely. While coding
-some arbitrary responsiveness CSS I suddenly realized that I'm
-creating a programming blog, but I don't even have a decent
-way to present any code.
+The blog seems to be coming together quite nicely, but while coding some arbitrary responsiveness CSS I suddenly realized that I'm creating a code showcase blog... without any actual way to show my code!
 
-I started by searching some programming fonts and thinking about
-how am I going to style div's and how will markdown know that
-I'm presenting code. But then it clicked.. Someone else has most
-for sure had this problem already.
+I started off by searching some programming fonts and thinking about how am I going to style div's and how will markdown know that I'll be presenting code. But then it clicked.. No way am I the first with this problem, someone else has for sure had this already.
 
-And lo' and behold, I now have a code formatter -
-[Highlight.js](https://highlightjs.org/), example code from an
-old version of the [Orbitals](https://github.com/kshaa/orbitals)
-project:
+And I was right, because this is the internet. If you can think of something, then somebody has probably done it (unfortunately this rule also applies to a lot of weird stuff you'd rather didn't exist, but that's for a different post). And behold of the code formatter I now possess - [Highlight.js](https://highlightjs.org/). See it in action with some example code from an old version of [Orbitals](https://github.com/kshaa/orbitals):
 
 ```
 orbPointForce: function (settings, point, mass) {
