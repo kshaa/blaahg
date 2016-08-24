@@ -41,6 +41,7 @@ body {
 
 #content.article {
     word-wrap: break-word;
+    transition: 0.5s;
 }
 
 #content.article header {
@@ -116,5 +117,21 @@ body {
         /* Absolute to relative margin */
         margin-left: 13.7%;
         margin-right: 13.7%;
+    }
+}
+
+@media (max-width: 640px) {
+    #content.article {
+        margin-left: 0;
+        margin-right: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    #content.article {
+        padding: 1em 1em;
     }
 }
