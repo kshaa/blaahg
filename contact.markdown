@@ -1,6 +1,6 @@
 ---
 title:  Contact me
-author: Krišjānis Veinbahs 
+author: Krišjānis Veinbahs
 ---
 
 <header>
@@ -9,11 +9,11 @@ author: Krišjānis Veinbahs
 </header>
 
 <i class="fa fa-phone">
-    <a>+371 277 56 959</a>
+    <a href="tel:+37127756959">+371 277 56 959</a>
 </i>
 
 <i class="fa fa-envelope">
-    <a>krisjanis.veinbahs@gmail.com</a>
+    <a href="mailto:krisjanis.veinbahs@gmail.com">krisjanis.veinbahs@gmail.com</a>
 </i>
 
 <i class="fa fa-facebook-official">

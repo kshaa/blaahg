@@ -17,6 +17,7 @@
 }
 
 #content.article {
+    overflow: hidden;
     max-width: 650px;
     background: #fff;
     margin: 0 auto;
