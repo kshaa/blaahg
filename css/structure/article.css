@@ -84,7 +84,6 @@
 #content.article > p {
     text-indent: 50px;
     text-align: justify;
-    text-justify: inter-word;
 }
 
 #content.article p.caption {
@@ -145,10 +144,16 @@
         -moz-border-radius: 0;
         border-radius: 0;
     }
+    #content.article img {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
     #content.article {
         padding: 1em 1em;
+    }
+    #content.article p {
+        font-size: 15px;
     }
 }
