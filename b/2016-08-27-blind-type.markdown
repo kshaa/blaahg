@@ -3,7 +3,7 @@ title: Blind type
 author: Krišjānis Veinbahs
 ---
 
-I was at home an hour till midnight. Minutes before I had had a chat and drank a beer with Nick. My bedroom was a mess, because I was planning to repaint the ceiling and walls.
+I was at home an hour till midnight. Minutes before I had had a chat and drank a beer with Nick. My bedroom was a mess, because I was planning to repaint the ceilings and walls.
 
 I was sitting in the dark, doing my daily Facebook and mail checks (the lights had to be removed to make painting easier). I kind of wanted to go to sleeep and in preperation decided to make my laptop's screen a bit dimmer. Tried dimming it with native 'fn' buttons, but it was still too bright. Decided to do it with some Googled commands.
 
