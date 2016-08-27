@@ -17,7 +17,7 @@ Now sitting in the dark.. Confused. Eyes starting to get accustomed to the newfo
 
 Right now I had two options - 1) Accept that I had failed and restart my computer in hopes it restarts the screen brightness settings. Or! 2) Do the most awesome, cool #dope #swag thing I could've ever done.
 
-In the dark without seeing any of the keys on my keyboard, type in my password, log in, open a terminal and retype the command precisely as I had just learned it and hope to God that everything works as expected.
+In the dark without seeing any of the keys on my keyboard nor anything on my screen, I type in my password, log in, open a terminal and retype the command precisely as I had just learned it and hope to God that everything works as expected.
 
 ...
 
