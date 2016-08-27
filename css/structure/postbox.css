@@ -20,3 +20,11 @@
     background: rgba(40,40,40,0.8);
     border-bottom: 5px solid var(--main-hover-color) !important;
 }
+
+@media (max-width: 480px) {
+    .postbox:hover {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+}
