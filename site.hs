@@ -23,7 +23,7 @@ main = hakyll $ do
             >>= loadAndApplyTemplate "templates/showcase.html" defaultContext
             >>= relativizeUrls
 
-    match "images/*" $ do
+    match "images/**" $ do
         route   idRoute
         compile copyFileCompiler
 
