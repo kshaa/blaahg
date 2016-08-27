@@ -116,8 +116,16 @@
     text-align: center;
 }
 
-#content.article pre code {
+#content.article code {
     white-space: pre-wrap;
+    display: inline;
+    font-size: 13px;
+    padding: 2px;
+}
+
+#content.article pre code {
+    display: block;
+    padding: 7px;
 }
 
 /* Responsiveness media queries */
