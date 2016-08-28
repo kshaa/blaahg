@@ -77,8 +77,8 @@
 
 #content.article a:hover,
 #content.article .fa > a:hover{
-    color: var(--main-hover-color);
-    border-bottom: 1px solid var(--main-hover-color);
+    color: var(--main-hover);
+    border-bottom: 1px solid var(--main-hover);
 }
 
 #content.article > p {
@@ -116,6 +116,7 @@
 }
 
 #content.article code {
+    background-color: var(--inline-code-bg);
     white-space: pre-wrap;
     display: inline;
     font-size: 13px;
@@ -123,6 +124,7 @@
 }
 
 #content.article pre code {
+    background-color: var(--block-code-bg);
     display: block;
     padding: 7px;
 }
@@ -136,6 +138,12 @@
     }
 }
 
+@media (max-width: 800px) {
+    #content.article img {
+        width: 100%;
+    }
+}
+
 @media (max-width: 640px) {
     #content.article {
         margin-left: 0;
@@ -143,9 +151,6 @@
         -webkit-border-radius: 0;
         -moz-border-radius: 0;
         border-radius: 0;
-    }
-    #content.article img {
-        width: 100%;
     }
 }
 
