@@ -11,8 +11,8 @@ main = hakyll $ do
         route   idRoute
         compile copyFileCompiler
 
-    match "p/index.markdown" $ do
-        route   $ setExtension "html"
+    match "projects.html" $ do
+        route   $ constRoute "p/index.html"
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= relativizeUrls
@@ -73,7 +73,7 @@ main = hakyll $ do
                 >>= relativizeUrls
 
     match "blog.html" $ do
-        route $ constRoute "b/index.html"
+        route   $ constRoute "b/index.html"
         compile $ do
             posts <- recentFirst =<< loadAll "b/*"
             let indexCtx =
