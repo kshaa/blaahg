@@ -8,7 +8,6 @@ _site*
 
 # Stack files
 .stack-work*
-stack.yaml
 
 # Bower fetched projects
 pkg/**
