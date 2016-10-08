@@ -1,0 +1,54 @@
+/**
+ * Header hover effects
+ */
+#header {
+    position: relative;
+    transition-delay: 0.25s;
+    margin-bottom: 0;
+    background: rgba(0,0,0,0.8);
+    transform: translate(calc(-100% + 100px), calc(-100% + 40px));
+    border-radius: 0px 0px 5px 0px; 
+}
+
+#header:hover {
+    transform: translateY(0) scale(1, 1);
+    background: rgba(0,0,0,1);
+    border-radius: 0px 0px 0px 0px; 
+}
+
+
+/**
+ * Hide links when not on hover
+ */
+#header a {
+    position: relative;
+    opacity: 0;
+    top: -200px;
+}
+
+#header:hover a {
+    top: 0;
+    opacity: initial;
+    margin-bottom: initial;
+}
+
+
+/**
+ *  Menu caption
+ */
+
+#header:after {
+    position: absolute;
+    content: "Menu";
+    font: 20px "Raleway";
+    right: 22px;
+    bottom: 8px;
+    color: white;
+    opacity: 1;
+    transition: 0.25s;
+    transition-delay: 0.25s;
+}
+
+#header:hover:after {
+    opacity: 0;
+}
