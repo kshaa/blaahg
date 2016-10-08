@@ -2,33 +2,25 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-    <head>
-
-        <!-- Site info -->
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="viewport" content="initial-scale=1">
-        <title>Veinbahs - $title$</title>
-        <meta name="description" content="A fantastic 12th graders project showcase">
-        <meta property="og:image" content="http://krisjanis.veinbahs.lv/images/showcase_thumbnail.jpg"/>
-        <meta property="og:image:width" content="400" />
-        <meta property="og:image:height" content="400" />
-
-        <!-- Packages, imports -->
-        <link rel="stylesheet" type="text/css" href="/css/p.css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"/>
-        <script src="../../js/hoverMenu.js"/>
-        <script src="../../pkg/timer.js/dist/timer.js"/>
-
-    </head>
-    <body>
-        <div id="hovermenu">
-            <a>Menu</a>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="initial-scale=1">
+    <title>Veinbahs - $title$</title>
+    <meta name="description" content="A fantastic 12th graders project showcase">
+    <meta property="og:image" content="http://krisjanis.veinbahs.lv/images/showcase_thumbnail.jpg"/>
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+    <link rel="stylesheet" type="text/css" href="/css/p.css" />
+</head>
+<body>
+    <div id="hovermenu">
+        <a>Menu</a>
+    </div>
+    $partial("templates/header.html")$
+    <div id="content" class="project">
+        <div>
+            $body$
         </div>
-        $partial("templates/header.html")$
-        <div id="content" class="project">
-            <div>
-                $body$
-            </div>
-        </div>
-    </body>
+    </div>
+</body>
 </html>
