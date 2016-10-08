@@ -9,16 +9,22 @@ main :: IO ()
 main = hakyll $ do
 -- Blog
     match "b/*" $ do
+        let postCtx =
+                dateField "date" "%B %e, %Y" `mappend`
+                defaultContext
         route $ setExtension "html"
         compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/post.html"    postCtx
-            >>= loadAndApplyTemplate "templates/default.html" postCtx
+            >>= loadAndApplyTemplate "templates/post.html" postCtx
+            >>= loadAndApplyTemplate "templates/base.html" postCtx
             >>= relativizeUrls
 
     match "blog.html" $ do
         route   $ constRoute "b/index.html"
         compile $ do
             posts <- recentFirst =<< loadAll "b/*"
+            let postCtx =
+                    dateField "date" "%B %e, %Y" `mappend`
+                    defaultContext
             let indexCtx =
                     listField "posts" postCtx (return posts) `mappend`
                     constField "title" "Blog"                `mappend`
@@ -26,7 +32,7 @@ main = hakyll $ do
 
             getResourceBody
                 >>= applyAsTemplate indexCtx
-                >>= loadAndApplyTemplate "templates/default.html" indexCtx
+                >>= loadAndApplyTemplate "templates/base.html" indexCtx
                 >>= relativizeUrls
 
 -- Projects
@@ -37,7 +43,7 @@ main = hakyll $ do
     match "p/*" $ do
         route   $ setExtension "html"
         compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/showcase.html" defaultContext
+            >>= loadAndApplyTemplate "templates/project.html" defaultContext
             >>= relativizeUrls
 
     match "projects.html" $ do
@@ -51,20 +57,20 @@ main = hakyll $ do
 
             getResourceBody
                 >>= applyAsTemplate indexCtx
-                >>= loadAndApplyTemplate "templates/default.html" indexCtx
+                >>= loadAndApplyTemplate "templates/base.html" indexCtx
                 >>= relativizeUrls
 
 --  Pages
     match "about.markdown" $ do
         route   $ setExtension "html"
         compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/default.html" defaultContext
+            >>= loadAndApplyTemplate "templates/base.html" defaultContext
             >>= relativizeUrls
 
     match "contact.markdown" $ do
         route $ setExtension "html"
         compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/default.html" defaultContext
+            >>= loadAndApplyTemplate "templates/base.html" defaultContext
             >>= relativizeUrls
 
 -- Styles, structure, etc.
@@ -85,15 +91,3 @@ main = hakyll $ do
         compile compressCssCompiler
 
     match "templates/*" $ compile templateBodyCompiler
-
-
---------------------------------------------------------------------------------
-postCtx :: Context String
-postCtx =
-    dateField "date" "%B %e, %Y" `mappend`
-    defaultContext
-
-projectCtx :: Context String
-projectCtx =
-    dateField "date" "%B %e, %Y" `mappend`
-    defaultContext
