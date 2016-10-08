@@ -73,6 +73,10 @@ main = hakyll $ do
             >>= loadAndApplyTemplate "templates/base.html" defaultContext
             >>= relativizeUrls
 
+    match "404.html" $ do
+        route   idRoute
+        compile copyFileCompiler
+
 -- Styles, structure, etc.
     match "images/**" $ do
         route   idRoute
