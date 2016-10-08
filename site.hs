@@ -72,9 +72,8 @@ main = hakyll $ do
                 >>= loadAndApplyTemplate "templates/default.html" archiveCtx
                 >>= relativizeUrls
 
-
-    match "index.html" $ do
-        route idRoute
+    match "blog.html" $ do
+        route $ constRoute "b/index.html"
         compile $ do
             posts <- recentFirst =<< loadAll "b/*"
             let indexCtx =
