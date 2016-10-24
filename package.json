@@ -1,0 +1,18 @@
+{
+  "name": "blaahg",
+  "version": "1.0.0",
+  "description": "Krišjānis Veinbahs' blog",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kshaa/blaahg.git"
+  },
+  "author": "Krišjānis Veinbahs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kshaa/blaahg/issues"
+  },
+  "homepage": "https://github.com/kshaa/blaahg#readme",
+  "dependencies": {
+    "napa": "^2.3.0"
+  }
+}
