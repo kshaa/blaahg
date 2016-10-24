@@ -9,5 +9,5 @@ _site*
 # Stack files
 .stack-work*
 
-# Bower fetched projects
-pkg/**
+# Npm module downloads
+node_modules*
