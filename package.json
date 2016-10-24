@@ -2,6 +2,13 @@
   "name": "blaahg",
   "version": "1.0.0",
   "description": "Krišjānis Veinbahs' blog",
+  "scripts": {
+    "install": "napa"
+  },
+  "napa": {
+    "spiral": "kshaa/spiral",
+    "orbitals": "kshaa/orbitals"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kshaa/blaahg.git"

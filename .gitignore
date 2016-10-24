@@ -1,2 +1,9 @@
 # Npm module downloads
 node_modules*
+
+# Hakyll generatives
+_cache*
+_site*
+
+# Stack cache
+.stack*
