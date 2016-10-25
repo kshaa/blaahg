@@ -9,5 +9,5 @@ _site*
 # Stack files
 .stack-work*
 
-# Npm module downloads
+# Node modules
 node_modules*
