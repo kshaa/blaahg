@@ -23,4 +23,4 @@ In the dark without seeing any of the keys on my keyboard nor anything on my scr
 
 And I god damn did it.
 
-![I am god](../images/b/2016-08-27-god.gif)
+![I am god](/images/b/2016-08-27-god.gif)
