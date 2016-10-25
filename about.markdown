@@ -8,7 +8,7 @@ author: Krišjānis Veinbahs
 <p>Loading the beard...</p>
 </header>
 
-![](images/about.jpg)
+![](/images/about.jpg)
 
 I'm a latvian student studying at [Riga State Gymnasium No. 3](http://www.r3g.lv/). I'm interested in physics, programming and music. I also sing in a choir, walk with shorts in winter and act like I know more than I actually do. I have gained some of my awesome programming skills by working at [Scandiweb](http://scandiweb.com/) as an overall web developer on [LashAffair](http://lashaffair.com/) and have explored physics by being a frequent at [Junior Physics Academy](http://jfs.lu.lv/).
 
