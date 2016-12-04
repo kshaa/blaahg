@@ -41,7 +41,7 @@ main = hakyll $ do
 
 -- Projects
     match "node_modules/**" $ do
-        route   $ gsubRoute "node_modules/" (const "r/")
+        route   $ gsubRoute "node_modules/" (const "node_modules/")
         compile copyFileCompiler
 
     match "p/*" $ do
