@@ -1,6 +1,7 @@
 ---
 title: Info
 author: Krišjānis Veinbahs
+id: about
 ---
 
 <header>

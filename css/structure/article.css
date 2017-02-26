@@ -47,6 +47,7 @@
 #content.article {
     word-wrap: break-word;
     transition: 0.5s;
+    overflow: auto;
 }
 
 #content.article header {
@@ -111,6 +112,13 @@
     -webkit-box-shadow: 4px 5px 6px rgba(0,0,0, 0.1);
 }
 
+body.about #content.article img {
+    float: left;
+    width: 38%;
+    margin-right: 3em;
+    margin-bottom: 1em;
+}
+
 #content.article div.figure {
     text-align: center;
 }
@@ -160,5 +168,8 @@
     }
     #content.article p {
         font-size: 15px;
+    }
+    body.about #content.article img {
+        display: none;
     }
 }

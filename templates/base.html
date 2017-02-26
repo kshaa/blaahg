@@ -22,7 +22,8 @@
     <script src="/js/highlight.js"></script>
 
 </head>
-<body>
+
+<body $if(id)$ class="$id$" $endif$>
     <div id="background"/>
     $partial("templates/header.html")$
     <div id="content" class="article">
