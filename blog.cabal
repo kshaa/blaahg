@@ -7,6 +7,8 @@ executable site
   main-is:          site.hs
   build-depends:    base == 4.*
                   , hakyll == 4.8.*
+                  , directory == 1.*
                   , filepath == 1.4.*
+                  , filesystem-trees == 0.1.0.6
   ghc-options:      -threaded
   default-language: Haskell2010

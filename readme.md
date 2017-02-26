@@ -2,17 +2,19 @@
 Krišjānis Veinbahs' blog
 ---
 
-Official Krišjānis' blog for posts and projects.
-As minimalistic as a blog should be.
+A self-sustaining blog.
+Shortest setup I could come up with.
 
 #### Use
-* Fetch dependencies
+* Fetch p/ part of blog
 ```
-npm install
+npm install --legacy-bundling
 ```
 
 * Compile the blog
 ```
 stack build --silent
-stack exec site build --silent
+stack exec site (re)build --silent
 ```
+
+Blog's saved in \_site/

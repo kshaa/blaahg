@@ -4,6 +4,8 @@ import           Data.Monoid (mappend)
 import           Data.List
 import           Hakyll
 import           System.FilePath.Posix
+import           System.File.Tree
+import           System.Directory
 
 
 --------------------------------------------------------------------------------
@@ -41,8 +43,9 @@ main = hakyll $ do
 
 -- Projects
     match "node_modules/**" $ do
-        route   $ gsubRoute "node_modules/" (const "node_modules/")
-        compile copyFileCompiler
+        preprocess $ createDirectory "_site"
+        preprocess $ getDirectory "node_modules"
+            >>= copyTo_ "_site/r"
 
     match "p/*" $ do
         route   $ cleanRoute
@@ -105,7 +108,7 @@ main = hakyll $ do
     match "templates/*" $ compile templateBodyCompiler
 
 ----
--- Html to index.html router
+-- .html to /index.html router
 ----
 
 cleanRoute :: Routes
