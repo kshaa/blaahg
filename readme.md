@@ -3,10 +3,11 @@ Krišjānis Veinbahs' blog
 ---
 
 Blog / project showcase / info page.
+
 Uses:
-    1. Highlight.js for code snippet formatting
-    2. NPM for managing projects in showcase
-    3. Hakyll for easy site deployment / configuration
+* Highlight.js for code snippet formatting
+* NPM for managing projects in showcase
+* Hakyll for easy site deployment / configuration
 
 #### Deployment
 * Fetch projects for showcase
