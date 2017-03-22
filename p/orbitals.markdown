@@ -1,6 +1,7 @@
 ---
 title: Orbitals
-description: Colorful cube floaties
+description: N-body gravity pull simulation
+date: 2016-12-19
 author: Krišjānis Veinbahs
 github: https://github.com/kshaa/orbitals
 ---

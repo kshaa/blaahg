@@ -1,6 +1,6 @@
 <div id="posts">
     $for(projects)$
-        <a href="$url$" class="postbox">
+        <a href="$if(redirect)$ $redirect$ $else$ $url$ $endif$" class="postbox">
             <span>$title$</span>
             <span> - $description$</span>
         </a>

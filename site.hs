@@ -43,7 +43,7 @@ main = hakyll $ do
 
 -- Projects
     match "node_modules/**" $ do
-        preprocess $ createDirectory "_site"
+        preprocess $ createDirectory "_site/"
         preprocess $ getDirectory "node_modules"
             >>= copyTo_ "_site/r"
 
@@ -57,7 +57,7 @@ main = hakyll $ do
     match "projects.html" $ do
         route   $ constRoute "p/index.html"
         compile $ do
-            projects <- loadAll "p/*"
+            projects <- recentFirst =<< loadAll "p/*"
             let indexCtx =
                     listField "projects" defaultContext (return projects) `mappend`
                     constField "title" "Projects"                         `mappend`

@@ -1,6 +1,7 @@
 ---
 title: Spiral
-description: Tinted square tornado
+description: A real-time line twister simulation
+date: 2016-05-02
 author: Krišjānis Veinbahs
 github: https://github.com/kshaa/spiral
 ---
