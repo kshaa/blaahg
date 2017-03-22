@@ -2,19 +2,22 @@
 Krišjānis Veinbahs' blog
 ---
 
-A self-sustaining blog.
-Shortest setup I could come up with.
+Blog / project showcase / info page.
+Uses:
+    1. Highlight.js for code snippet formatting
+    2. NPM for managing projects in showcase
+    3. Hakyll for easy site deployment / configuration
 
-#### Use
-* Fetch p/ part of blog
+#### Deployment
+* Fetch projects for showcase
 ```
 npm install --legacy-bundling
 ```
 
-* Compile the blog
+* Compile, run hakyll code
 ```
 stack build --silent
 stack exec site (re)build --silent
 ```
 
-Blog's saved in \_site/
+* Blog's stored in \_site/
