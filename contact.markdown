@@ -1,10 +1,10 @@
 ---
-title:  Contact me
+title:  Contacts
 author: Krišjānis Veinbahs
 ---
 
 <header>
-<h1><a href="#">Contact me</a></h1>
+<h1><a href="#">Contacts</a></h1>
 <p>Ping... Pong!</p>
 </header>
 

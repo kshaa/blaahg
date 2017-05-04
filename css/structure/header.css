@@ -21,7 +21,7 @@
 
 #navigation a {
     display: inline-block;
-    padding: 14px 10px;
+    padding: 10px 14px 10px 11px;
     text-decoration: none;
     color: #aaa;
     font-family: 'alegreya-light';
@@ -29,9 +29,11 @@
     text-transform: uppercase;
     transition: 0.7s;
     transition-delay: 0.25s;
+    border-bottom: 3px solid rgba(0,0,0,0);
 }
 
 #navigation a:hover {
+    border-bottom: 3px solid #fff !important;
     transition: 0.1s;
     transition-delay: 0;
     color: #eee;
