@@ -68,6 +68,7 @@ main = hakyll $ do
                 >>= loadAndApplyTemplate "templates/base.html" indexCtx
                 >>= relativizeUrls
                 >>= cleanIndexUrls
+                >>= cleanIndexHtmls
 
 --  Pages
     match "about.markdown" $ do
