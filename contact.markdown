@@ -13,21 +13,9 @@ author: Krišjānis Veinbahs
 </i>
 
 <i class="fa fa-envelope">
-    <a href="mailto:krisjanis.veinbahs@gmail.com">krisjanis.veinbahs@gmail.com</a>
-</i>
-
-<i class="fa fa-facebook-official">
-    <a href="https://facebook.com/veinbahs">https://facebook.com/veinbahs</a>
-</i>
-
-<i class="fa fa-twitter">
-    <a href="https://twitter.com/blokflautijs">https://twitter.com/blokflautijs</a>
+    <a href="mailto:krisjanis@veinbahs.lv">krisjanis@veinbahs.lv</a>
 </i>
 
 <i class="fa fa-linkedin-square">
     <a href="https://linkedin.com/in/kveinbahs">https://linkedin.com/in/kveinbahs</a>
-</i>
-
-<i class="fa fa-github">
-    <a href="https://github.com/kshaa">https://github.com/kshaa</a>
 </i>
