@@ -1,0 +1,11 @@
+FROM node:10
+
+WORKDIR /usr/src/app
+
+RUN npm i -g http-server
+
+COPY ./entrypoint.sh .
+
+ENTRYPOINT ["./entrypoint.sh"]
+
+CMD ["serve-site"]

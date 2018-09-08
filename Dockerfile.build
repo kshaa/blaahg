@@ -1,0 +1,15 @@
+FROM fullmetalhaskell/hakyll:lts-9.21
+
+WORKDIR /usr/src/app
+
+# Stack info & cabal packages
+COPY ./stack.yaml .
+COPY ./blog.cabal .
+
+# Cache site building dependency downloads
+RUN stack build --only-dependencies
+
+COPY ./entrypoint.sh .
+
+ENTRYPOINT ["/usr/src/app/entrypoint.sh"]
+CMD ["serve-site"]

@@ -1,0 +1,15 @@
+# Git
+.git
+
+# Docker
+Dockerfile
+Dockerfile.sh
+
+# Generated files
+_site
+_cache
+.stack-work*
+
+# Ide
+*.swp
+.idea*

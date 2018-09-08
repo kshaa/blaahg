@@ -42,11 +42,6 @@ main = hakyll $ do
                 >>= cleanIndexUrls
 
 -- Projects
-    match "node_modules/**" $ do
-        preprocess $ createDirectory "_site/"
-        preprocess $ getDirectory "node_modules"
-            >>= copyTo_ "_site/r"
-
     match "p/*" $ do
         route   $ cleanRoute
         compile $ pandocCompiler
