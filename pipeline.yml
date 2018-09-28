@@ -91,7 +91,15 @@ jobs:
             git config --global user.name "Concourse CI"
 
             git add .
-            git commit -m "Blaahg deploy"
+
+            # Commit if there are changes
+            if [[ $(git diff HEAD~0) ]]
+            then
+              echo "Committing changes in the site build"
+              git commit -m "Blaahg deploy $(date +%F-%T)"
+            else
+              echo "There are no changes to be committed - unchanged build"
+            fi
   - put: resource-blaahg-dist
     params: {repository: resource-blaahg-dist-updated}
 
