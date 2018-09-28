@@ -1,0 +1,137 @@
+---
+resource_types:
+- name: ssh
+  type: docker-image
+  source:
+    repository: quay.io/henry40408/concourse-ssh-resource
+
+resources:
+- name: resource-blaahg-src
+  type: git
+  source:
+    uri: https://github.com/kshaa/blaahg.git
+    branch: master
+- name: resource-blaahg-dist
+  type: git
+  source:
+    uri: git@github.com:kshaa/blaahg.git
+    branch: master-dist
+    private_key: |
+      ((kshaa_private_key))
+- name: resource-kcity-plaaksne
+  type: ssh
+  source:
+    host: krisjanis.veinbahs.lv
+    user: ((kshaa_user))
+    private_key: |
+      ((kshaa_private_key))
+
+jobs:
+- name: job-build-site
+  serial: true
+  plan:
+  - get: resource-blaahg-src
+    trigger: true
+  - task: site-build-generate
+    config:
+      platform: linux
+      image_resource:
+        type: docker-image
+        source: 
+          repository: blokflautijs/blaahg-build
+          tag: initial
+      inputs:
+        - name: resource-blaahg-src
+      outputs:
+        - name: resource-blaahg
+      run:
+        path: sh
+        args:
+          - -exc
+          - |
+            # Clone the input for manipulations
+            git clone resource-blaahg-src resource-blaahg
+
+            # Build and generate site
+            cd resource-blaahg
+            sh entrypoint.sh site_build site_generate
+
+  - get: resource-blaahg-dist
+  - task: site-build-archive
+    config:
+      platform: linux
+      image_resource:
+        type: docker-image
+        source: 
+          # This should be replaced with a simple busybox that has 'git'
+          # But ain't nobody got time for dat
+          repository: starkandwayne/concourse
+      inputs:
+        - name: resource-blaahg
+        - name: resource-blaahg-dist
+      outputs:
+        - name: resource-blaahg-dist-updated
+      run:
+        path: sh
+        args:
+          - -exc
+          - |
+            # Clone the input for manipulations
+            git clone resource-blaahg-dist resource-blaahg-dist-updated 
+
+            # Remove old deploy
+            rm -rf resource-blaahg-dist-updated/_site
+
+            # Copy in new deploy
+            cp -rf resource-blaahg/_site resource-blaahg-dist-updated/_site
+
+            # Commit
+            cd resource-blaahg-dist-updated
+            git config --global user.email "krisjanis+concourse@veinbahs.lv"
+            git config --global user.name "Concourse CI"
+
+            git add .
+            git commit -m "Blaahg deploy"
+  - put: resource-blaahg-dist
+    params: {repository: resource-blaahg-dist-updated}
+
+- name: job-deploy-site
+  plan:
+  - get: resource-blaahg-dist
+    trigger: true
+  - put: resource-kcity-plaaksne
+    params:
+      interpreter: /bin/sh
+      script: |
+        # Create path to site if not yet created
+        mkdir -p <blaahg_path>
+        cd <blaahg_path>
+
+        # Remove previous deploy traces if such exist
+        rm -rf deploy_tmp
+
+        # Clone built site into a temp dir
+        git clone -b master-dist https://github.com/kshaa/blaahg.git deploy_tmp
+
+        # Back up previous built/used site
+        # 2>/dev/null will silence errors if the site doesn't exist yet
+        mv _site _site_archived_$(date +%F-%T) 2>/dev/null
+
+        # Move new site where the old one was
+        mv deploy_tmp/_site _site 2>/dev/null
+        rm -rf deploy_tmp
+
+        # Remount site overlay and reload lighttpd server
+        sudo systemctl restart blogmount
+        sudo systemctl reload lighttpd
+
+        # Report on current status of Plaaksne
+        echo "Site versions on Plaaksne right now - see below"
+        ls _site*
+
+        echo "Current overlayed site data right now - see below"
+        ls extra
+
+      placeholders:
+        - name: "<blaahg_path>"
+          value: ((blaahg_path))
