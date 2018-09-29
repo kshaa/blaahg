@@ -93,7 +93,7 @@ jobs:
             git add .
 
             # Commit if there are changes
-            git commit -m "Blaahg deploy $(date +%F-%T)" 2>/dev/null
+            git commit -m "Blaahg deploy $(date +%F-%T)" 2>/dev/null  || true
   - put: resource-blaahg-dist
     params: {repository: resource-blaahg-dist-updated}
 
